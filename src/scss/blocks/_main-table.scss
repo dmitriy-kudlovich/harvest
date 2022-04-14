@@ -1,0 +1,24 @@
+.main__item-table {
+  transform: translateX(-2.5%);
+  text-align: left;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 0.69rem;
+  padding-right: 1.38rem;
+  border-bottom: 1px solid #151e41;
+}
+
+td {
+  border-right: 1px solid #151e41;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+tr:last-child td {
+  border-bottom: none;
+}

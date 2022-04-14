@@ -60,6 +60,10 @@ button:active {
   outline: none;
 }
 
+sup {
+  font-family: inherit;
+}
+
 [class*="container"] {
   display: flex;
   flex-direction: column;
@@ -100,3 +104,8 @@ button:active {
 .col__container--left {
   width: 15.06rem;
 }
+
+.text--dark {
+  color: #a1a6be;
+}
+
