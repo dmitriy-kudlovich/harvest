@@ -5,13 +5,21 @@ block variables
 
 
 block content
-    .wrapper
-        .row
-            .col--left.col
-                .col__container--left
+   
+        //- .row
+        //-     .col--left.col
+        //-         .col__container--left
+        //-             include ../sections/_nav.pug
+        //-     .col--right.col
+        .container
+            .row
+                .col.col--left
                     include ../sections/_nav.pug
-            .col--right.col
-        
+                .col.col--right
+                    include ../sections/_header.pug
+                    include ../sections/_main.pug
+                    
+                    
             
 
 

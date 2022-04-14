@@ -1,0 +1,37 @@
+.main__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main__item {
+  display: block;
+  position: relative;
+  padding-top: 21.3%;
+  width: 31.6%;
+  background-color: #383e57;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+  color: #fff;
+}
+
+.main__item-content {
+  position: absolute;
+  padding: 1.25rem 1.5rem 2.25rem 1.25rem;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main__item-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.main__item-img-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
