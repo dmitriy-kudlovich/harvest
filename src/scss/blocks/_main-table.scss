@@ -1,7 +1,28 @@
+.main__table-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 41.57rem) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .main__item-table {
+  display: none;
   transform: translateX(-2.5%);
   text-align: left;
   border-spacing: 0;
+  margin-bottom: 2rem;
+
+  @media (min-width: 31.25rem) {
+    display: block;
+  }
+
+  @media (min-width: 62.12rem) {
+    margin-bottom: 0;
+  }
 }
 
 th,

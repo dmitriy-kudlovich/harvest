@@ -68,11 +68,12 @@ sup {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  padding: 0 15px;
+  // padding: 0 15px;
   min-height: 100%;
   margin: 0 auto;
   max-width: 90rem;
   min-width: 20rem;
+  background-color: #4d5474;
 
   @media (min-width: 90rem) {
     padding: 0;
@@ -93,12 +94,23 @@ sup {
 }
 
 .col--left {
+  display: none;
   width: 16.74%;
+
+  @media (min-width: 80rem) {
+    display: block;
+  }
 }
 
 .col--right {
-  padding: 3.44rem 4.94rem 3.44rem 2.5rem;
-  width: calc(100% - 16.74%);
+  padding: 3.44rem 2.5rem;
+  width: 100%;
+
+  @media (min-width: 80rem) {
+    padding: 3.44rem 4.94rem 3.44rem 2.5rem;
+
+    width: calc(100% - 16.74%);
+  }
 }
 
 .col__container--left {
@@ -109,3 +121,6 @@ sup {
   color: #a1a6be;
 }
 
+.flex-push {
+  flex: 1 1 auto;
+}

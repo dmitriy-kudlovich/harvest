@@ -1,81 +1,118 @@
 main.main
     .main__row
         a.main__item.main__item--3(href="#!")
-            .main__item-content
-                p.main__item-title Работа с полями
-                .main__item-img-wrapper
-                    img.main__item-img(src="./img/fields.svg")
+            p.main__item-title Работа с полями
+            .main__item-img-wrapper
+                img.main__item-img(src="./img/fields.svg")
         a.main__item.main__item--3(href="#!")
-            .main__item-content
-                p.main__item-title Работа с полями
-                p.main__item-text Поволжье
-                .main__item-img-wrapper
-                    img.main__item-img(src="./img/map.svg")
+            p.main__item-title Работа с полями
+            p.main__item-text Поволжье
+            .main__item-img-wrapper
+                img.main__item-img(src="./img/map.svg")
         a.main__item.main__item--3(href="#!")
-            .main__item-content
-                p.main__item-title Погода в Курской области
-                .main__item-row
-                    .main__item-col.main__item-col--3
-                        p.main__item-text 28.08.2020
-                        p.main__item-text Среда
-                    .main__item-col.main__item-col--1
-                        p.main__item-text.main__item-text--large +28
-                            sup.main__item-text--sup &#176;С
-                .main__item-row.text--dark
-                    .main__item-col.main__item-col--2
-                        p.main__item-text 750 мм рт. ст.
-                        p.main__item-text 3,5 м/с
-                    .main__item-col.main__item-col--2
-                        p.main__item-text Солнечно
-                        p.main__item-text Осадки 7%
+            p.main__item-title Погода в Курской области
+            .main__item-row
+                .main__item-col.main__item-col--3
+                    p.main__item-text 28.08.2020
+                    p.main__item-text Среда
+                .main__item-col.main__item-col--1
+                    p.main__item-text.main__item-text--large +28
+                        sup.main__item-text--sup &#176;С
+            .main__item-row.text--dark
+                .main__item-col.main__item-col--2
+                    p.main__item-text 750 мм рт. ст.
+                    p.main__item-text 3,5 м/с
+                .main__item-col.main__item-col--2
+                    p.main__item-text Солнечно
+                    p.main__item-text Осадки 7%
     .main__row
-        a.main__item.main__item--1(href="#!")
-            .main__item-content
-                .main__item-row.main__item-row--space-between
-                    .main__item-col
-                        p.main__item-title.main__item-title--margin Отчёты и статистика
-                        table.main__item-table
+        .main__item.main__item--1
+            .main__table-wrapper
+                .main__item-col.main__item-col--1
+                    p.main__item-title.main__item-title--margin Отчёты и статистика
+                    table.main__item-table
+                        thead
                             tr
                                 th 2020 год
                                 th 2019 год
                                 th 2018 год
+                        tbody 
                             tr
-                                td 123 000 000 ₽
-                                td 90 568 666 ₽
-                                td 200 568 666 ₽
+                                td(data-label="2020 год") 123 000 000 ₽
+                                td(data-label="2019 год") 90 568 666 ₽
+                                td(data-label="2018 год") 200 568 666 ₽
                             tr
-                                td 123 587 569 ₽
-                                td 123 587 569 ₽
-                                td 123 587 569 ₽
+                                td(data-label="2020 год") 123 587 569 ₽
+                                td(data-label="2019 год") 123 587 569 ₽
+                                td(data-label="2018 год") 123 587 569 ₽
                             tr
-                                td 258 654 588 ₽
-                                td 258 654 588 ₽
-                                td 258 654 588 ₽
-                    .main__item-col
-                        .main__item-img-wrapper
-                            img.main__item-img(src="./img/diagram.svg")
-        a.main__item.main__item--3(href="#!")
-            .main__item-content
-                p.main__item-title.main__item-title--margin Сотрудники 
-                .main__item-employee
-                    .main__item-col
-                        p.main__item-text Иванов Иван Иванович
-                        p.main__item-text.text--dark Заместитель
-                    .main__item-col
-                        .main__item-contacts-icons
-                            .main__item-img-wrapper
-                                img.main__item-img(src="./img/icons/phone-icon.svg")
-                            .main__item-img-wrapper
-                                img.main__item-img(src="./img/icons/mail-icon.svg")
-                .main__item-employee
-                    .main__item-col
-                        p.main__item-text Константинов Иван Иванович
-                        p.main__item-text.text--dark Секретарь
-                    .main__item-col
-                        .main__item-contacts-icons
-                            .main__item-img-wrapper
-                                img.main__item-img(src="./img/icons/phone-icon.svg")
-                            .main__item-img-wrapper
-                                img.main__item-img(src="./img/icons/mail-icon.svg")
+                                td(data-label="2020 год") 258 654 588 ₽
+                                td(data-label="2019 год") 258 654 588 ₽
+                                td(data-label="2018 год") 258 654 588 ₽
+                .main__item-col
+                    .main__item-img-wrapper
+                        img.main__item-img(src="./img/gistogram.svg")
+        .main__item.main__item--3
+            .wrapper
+                p.main__item-title.main__item-title--margin Сотрудники
+                .main__item-employees 
+                    .main__item-employee
+                        .main__item-col
+                            p.main__item-text Иванов Иван Иванович
+                            p.main__item-text.text--dark Заместитель
+                        .main__item-col
+                            .main__item-contacts-icons
+                                a(href="#!").contacts__link
+                                    img.main__item-img(src="./img/icons/phone-icon.svg")
+                                a(href="#!").contacts__link
+                                    img.main__item-img(src="./img/icons/mail-icon.svg")
+                    .main__item-employee
+                        .main__item-col
+                            p.main__item-text Константинов Иван Иванович
+                            p.main__item-text.text--dark Секретарь
+                        .main__item-col
+                            .main__item-contacts-icons
+                                a(href="#!").contacts__link
+                                    img.main__item-img(src="./img/icons/phone-icon.svg")
+                                a(href="#!").contacts__link
+                                    img.main__item-img(src="./img/icons/mail-icon.svg")
+                a(href="#!").item__link Показать еще
+    .main__row
+        .main__item.main__item--2
+            .main__item-row.main__item-row--space-between
+                p.main__item-title Статистика пшена на полях ЦАО
+                select.item__select
+                    option.item__select-option По годам
+                    option.item__select-option По годам
+                    option.item__select-option По годам
+            .main__item-row
+                .main__item-col--2
+                    ul.item__list
+                        li.item__list-position
+                            p.list__heading.main__item-title--margin  Урожай 2020
+                            p.main__item-text.text--dark 15 150 000 тонн
+                            p.main__item-text.text--dark 120 областей
+                        li.item__list-position
+                            p.list__heading.main__item-title--margin  Урожай 2019
+                            p.main__item-text.text--dark 102 650 980 тонн
+                            p.main__item-text.text--dark 250 областей
+                .main__item-img-wrapper
+                    img.main__item-img(src="./img/diagram-pie.svg")
+        .main__item.main__item--2 
+            p.main__item-title.title--icon Арендуемая техника
+                .main__item-row.main__item-row--space-between
+                    .main__item-col--35
+                        p.main__item-text.main__item-title--margin ООО “Магнат Мед”
+                        ul.item__list.flex-push
+                            li.item__list-position
+                                p.list__heading.main__item-title--margin  Экскаваторы 2020
+                                p.main__item-text.text--dark 115 100 машин
+                                p.main__item-text.text--dark 130 областей
+                                p.main__item-text.text--dark 5 предприятий
+                        a(href="#!").item__link Добавить технику
+                    .main__item-img-wrapper
+                        img.main__item-img(src="./img/diagram.svg")
+
+
 
 
