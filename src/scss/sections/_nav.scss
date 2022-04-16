@@ -1,7 +1,7 @@
 .nav {
   display: none;
   position: relative;
-  padding: 2.5rem 1.25rem;
+  padding: 2.5rem 1.25rem 2.5rem 0.685rem;
   background-color: #1f2339;
   height: 100%;
 
@@ -28,12 +28,40 @@
 .nav__link {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5625rem;
+  padding: 0.685rem 0.685rem 0.75rem 0.375rem;
   color: #fff;
+  border-radius: 10px;
+  transition: all 0.2s;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover {
+    background: radial-gradient(
+          133.33% 2508.35% at -4.59% -10%,
+          #32e6ff 0%,
+          rgba(0, 255, 209, 0.81) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      #43e8ff;
+    color: #23273a;
+  }
+}
+
+.nav__link--turquoise{
+  color: #43E8FF;
+}
+
+.nav__link--active {
+  background: radial-gradient(
+        133.33% 2508.35% at -4.59% -10%,
+        #32e6ff 0%,
+        rgba(0, 255, 209, 0.81) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #43e8ff;
+  color: #23273a;
 }
 
 .link__img-wrapper {

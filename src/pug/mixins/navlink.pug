@@ -1,5 +1,5 @@
-mixin navlink(href, img, className="link__img-wrapper")
-    a.nav__link(href= href)
+mixin navlink(href, img, className="link__img-wrapper", classLink="nav__link")
+    a(href= href class= classLink)
         div(class= className)
             img.link__img(src="./img/icons/" + img alt= img)
         block
