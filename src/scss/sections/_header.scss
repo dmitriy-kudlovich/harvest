@@ -5,11 +5,30 @@
 
 .header__row {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 62.12rem) {
+    flex-direction: row;
+  }
 }
 
 .header__menu-items {
   display: flex;
   align-items: center;
+}
+
+.heading--wrapper {
+  margin-right: 1rem;
+}
+
+.header__link {
+  color: #43e8ff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.header__col {
+  display: flex;
 }

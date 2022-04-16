@@ -1,7 +1,7 @@
 extends ./../layouts/main.pug
 
 block variables
-    - const title = "Главная";
+    - const title = "Мероприятия";
 
 
 block content
@@ -10,8 +10,8 @@ block content
             .col.col--left
                 include ../sections/_nav.pug
             .col.col--right
-                include ../sections/_header.pug
-                include ../sections/_main.pug
+                include ../sections/events/_events-header.pug
+                include ../sections/events/_events-main.pug
                     
                     
             

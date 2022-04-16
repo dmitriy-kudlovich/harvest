@@ -1,0 +1,21 @@
+.notes {
+  margin-bottom: 1.57rem;
+}
+
+.notes__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.notes__section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-grow: 1;
+}

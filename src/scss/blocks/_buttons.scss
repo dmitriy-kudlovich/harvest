@@ -1,4 +1,5 @@
 .header__button {
+  font-family: "Open Sans";
   margin-right: 1.44rem;
   width: 2rem;
   height: 2rem;
@@ -34,4 +35,33 @@
     background-color: #fff;
     height: 2px;
   }
+}
+
+.header__button--white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  width: fit-content;
+  border-radius: 6px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.button--dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  width: fit-content;
+  border-radius: 6px;
+  background-color: #23273a;
+  color: #43e8ff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.button-check {
+  padding-left: 1rem;
 }

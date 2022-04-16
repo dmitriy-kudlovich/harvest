@@ -1,0 +1,77 @@
+form {
+  display: block;
+}
+
+.form__section {
+  margin-bottom: 1.1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__label {
+  display: block;
+}
+
+.form__textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.625rem;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #c4c4c4;
+  resize: none;
+  background: #3e4459;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form__select--wrapper {
+  position: relative;
+  width: 63%;
+}
+
+.form__select {
+  display: block;
+  padding: 0.5rem 0.685rem;
+  width: 100%;
+  background: #3e4459;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #c4c4c4;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+.select__arrow::before {
+  content: url(../img/icons/select-icon.svg);
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0.875rem;
+  width: 8.9px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.form__date {
+  width: 40%;
+  text-align: center;
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

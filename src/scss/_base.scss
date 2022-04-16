@@ -45,6 +45,12 @@ p {
   list-style-type: none;
 }
 
+button,
+select,
+input {
+  cursor: pointer;
+}
+
 button {
   display: block;
   background-color: transparent;
@@ -117,10 +123,22 @@ sup {
   width: 15.06rem;
 }
 
-.text--dark {
-  color: #a1a6be;
-}
-
 .flex-push {
   flex: 1 1 auto;
+}
+
+.align-end {
+  align-items: center !important;
+
+  @media (min-width: 62.12rem) {
+    align-items: flex-end !important;
+  }
+}
+
+.height-auto {
+  height: auto !important;
+}
+
+.paddings-zero {
+  padding: 0 !important;
 }

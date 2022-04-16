@@ -1,0 +1,39 @@
+form.main__item.height-auto.paddings-zero
+    .item__section
+        .item__section-content
+            label.form__label.main__item-text(for="conclusion") Решение о проведении поверки
+            textarea.form__textarea(placeholder="Введите текст" id="conclusion").text--dark
+    .item__section
+        .item__section-content
+            .form__section
+                label.form__label.main__item-text(for="company") Организация
+                input.form__textarea(type="text" value="ООО “РесерчХолд”" id="company").text--dark
+            .form__section
+                p.main__item-text Вид проверки
+                .form__select--wrapper.select__arrow
+                    select.form__select
+                        option(value="Плановая") Плановая
+                        option(value="Неплановая") Неплановая
+            .form__section
+                p.main__item-text Форма проверки
+                .form__select--wrapper.select__arrow
+                    select.form__select
+                        option(value="Выездная") Выездная
+                        option(value="Невыездная") Невыездная
+            .form__section
+                p.main__item-text Метод проверки
+                .form__select--wrapper.select__arrow
+                    select.form__select
+                        option(value="Выездная") Фактическая
+                        option(value="Невыездная") Тактическая
+            .form__section
+                label.form__label.main__item-text(for="date") Сроки проведения проверки
+                input.form__textarea.form__date(type="text" value="02.08.2020 - 05.08.2020" id="date").text--dark
+            .form__section
+                label.form__label.main__item-text(for="place") Место проведения проверки
+                input.form__textarea(type="text" value="г. Москва, Лененский пр-т 178, к4" id="place").text--dark
+            .form__submit
+                input(type="submit" value="Написать").button--dark
+
+
+
