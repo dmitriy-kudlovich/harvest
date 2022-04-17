@@ -10,8 +10,9 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col col--left">
-          <nav class="nav">
+        <div class="col col--left" id="colLeft">
+          <nav class="nav" id="nav">
+            <div class="button button--close" id="buttonClose"></div>
             <div class="nav__top"><a class="nav__link" href="index.html">
                 <div class="link__img-wrapper--small"><img class="link__img" src="./img/icons/house-icon.svg" alt="house-icon.svg"/></div>Главная</a><a class="nav__link" href="#!">
                 <div class="link__img-wrapper--small"><img class="link__img" src="./img/icons/user-outline-icon.svg" alt="user-outline-icon.svg"/></div>Константин <br>Константиновский</a>
@@ -28,6 +29,11 @@
         <div class="col col--right">
           <header class="header">
             <div class="header__row">
+              <div class="button button--hamburger-wrapper">
+                <button class="button--hamburger" id="buttonHamburger">
+                  <div class="hamburder-dot"></div>
+                </button>
+              </div>
               <div class="heading--wrapper">
                 <h1 class="heading">Организации
                 </h1>
@@ -46,145 +52,157 @@
             </div>
           </header>
           <main>
-            <div class="companies__table-wrapper">
-              <table class="companies__table">
-                <thead>
-                  <tr>
-                    <th class="table__name">Наименование организации</th>
-                    <th class="number">ИНН</th>
-                    <th class="table__chief">Руководитель</th>
-                    <th class="table__address" colspan="2">Адрес</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="table__diagram diagram--red">Фонд "Сколково"</span></td>
-                    <td class="text-center">7706412961</td>
-                    <td>Балега Юрий Юрьевич</td>
-                    <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--red">АНО "Издательство РАМН" </span></td>
-                    <td class="text-center">7709202761</td>
-                    <td>Султыгов Марат Магомедович</td>
-                    <td>г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td class="no-wrap"><span class="table__diagram diagram--red">Российское историческое общество</span></td>
-                    <td class="text-center">7704280029</td>
-                    <td>Иванов  Петр Иванович</td>
-                    <td>г. Москва, ул. Воронцово поле, д. 13, стр 1</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--red">Академический учебно-научное</span></td>
-                    <td class="text-center">7704274804</td>
-                    <td>Иванов  Иван Николаевич</td>
-                    <td>г. Москва, переулок Борисоглебский, д. 13, 3</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--red">ЦИПБ РАН </span></td>
-                    <td class="text-center">7728514244</td>
-                    <td>Петров  Иван Федорович</td>
-                    <td>г. Москва, ул. Гарибальди, д. 21Б</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--magenta">ООО “Прибор -ресурс”</span></td>
-                    <td class="text-center">7743226441</td>
-                    <td>Кудряшов  Борис  Андреевич</td>
-                    <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--magenta">ООО “Прибор -ресурс”</span></td>
-                    <td class="text-center">7743226441</td>
-                    <td>Сергеев Александр Михайлоич</td>
-                    <td>г. Москва, просп. Ленинградский, д. 77, кор. 1,под пом VIII К 7</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--magenta">ООО “Прибор -ресурс”</span></td>
-                    <td class="text-center">7743226441</td>
-                    <td>Балега Юрий Юрьевич</td>
-                    <td>г. Москва, просп. Ленинградский, д. 77, кор. 1,под пом VIII К 7</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--magenta">Фонд "Сколково"</span></td>
-                    <td class="text-center">7706412961</td>
-                    <td>Султыгов Марат Магомедович</td>
-                    <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--magenta">АНО "Издательство РАМН"</span></td>
-                    <td class="text-center">7709202761</td>
-                    <td>Иванов  Петр Иванович</td>
-                    <td>г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--turquoise">Российское историческое общество</span></td>
-                    <td class="text-center">7704280029</td>
-                    <td>Иванов  Иван Николаевич</td>
-                    <td>г. Москва, ул. Воронцово поле, д. 13, стр 1</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
-                    <td class="text-center">7706412961</td>
-                    <td>Балега Юрий Юрьевич</td>
-                    <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
-                    <td class="text-center">7706412961</td>
-                    <td>Балега Юрий Юрьевич</td>
-                    <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
-                    <td class="text-center">7706412961</td>
-                    <td>Балега Юрий Юрьевич</td>
-                    <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
-                    <td class="text-center">7706412961</td>
-                    <td>Балега Юрий Юрьевич</td>
-                    <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
-                    <td class="text-center">7706412961</td>
-                    <td>Балега Юрий Юрьевич</td>
-                    <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
-                    <td class="text-center">7706412961</td>
-                    <td>Балега Юрий Юрьевич</td>
-                    <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                  <tr>
-                    <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
-                    <td class="text-center">7706412961</td>
-                    <td>Балега Юрий Юрьевич</td>
-                    <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                    <td><img src="./img/icons/edit-icon.svg"/></td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="main__row">
+              <div class="companies__table-wrapper">
+                <table class="companies__table">
+                  <thead>
+                    <tr>
+                      <th class="table__name">Наименование организации</th>
+                      <th class="number">ИНН</th>
+                      <th class="table__chief">Руководитель</th>
+                      <th class="table__address" colspan="2">Адрес</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="table__diagram diagram--red">Фонд "Сколково"</span></td>
+                      <td class="text-center">7706412961</td>
+                      <td>Балега Юрий Юрьевич</td>
+                      <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--red">АНО "Издательство РАМН" </span></td>
+                      <td class="text-center">7709202761</td>
+                      <td>Султыгов Марат Магомедович</td>
+                      <td>г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td class="no-wrap"><span class="table__diagram diagram--red">Российское историческое общество</span></td>
+                      <td class="text-center">7704280029</td>
+                      <td>Иванов  Петр Иванович</td>
+                      <td>г. Москва, ул. Воронцово поле, д. 13, стр 1</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--red">Академический учебно-научное</span></td>
+                      <td class="text-center">7704274804</td>
+                      <td>Иванов  Иван Николаевич</td>
+                      <td>г. Москва, переулок Борисоглебский, д. 13, 3</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--red">ЦИПБ РАН </span></td>
+                      <td class="text-center">7728514244</td>
+                      <td>Петров  Иван Федорович</td>
+                      <td>г. Москва, ул. Гарибальди, д. 21Б</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--magenta">ООО “Прибор -ресурс”</span></td>
+                      <td class="text-center">7743226441</td>
+                      <td>Кудряшов  Борис  Андреевич</td>
+                      <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--magenta">ООО “Прибор -ресурс”</span></td>
+                      <td class="text-center">7743226441</td>
+                      <td>Сергеев Александр Михайлоич</td>
+                      <td>г. Москва, просп. Ленинградский, д. 77, кор. 1,под пом VIII К 7</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--magenta">ООО “Прибор -ресурс”</span></td>
+                      <td class="text-center">7743226441</td>
+                      <td>Балега Юрий Юрьевич</td>
+                      <td>г. Москва, просп. Ленинградский, д. 77, кор. 1,под пом VIII К 7</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--magenta">Фонд "Сколково"</span></td>
+                      <td class="text-center">7706412961</td>
+                      <td>Султыгов Марат Магомедович</td>
+                      <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--magenta">АНО "Издательство РАМН"</span></td>
+                      <td class="text-center">7709202761</td>
+                      <td>Иванов  Петр Иванович</td>
+                      <td>г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--turquoise">Российское историческое общество</span></td>
+                      <td class="text-center">7704280029</td>
+                      <td>Иванов  Иван Николаевич</td>
+                      <td>г. Москва, ул. Воронцово поле, д. 13, стр 1</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
+                      <td class="text-center">7706412961</td>
+                      <td>Балега Юрий Юрьевич</td>
+                      <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
+                      <td class="text-center">7706412961</td>
+                      <td>Балега Юрий Юрьевич</td>
+                      <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
+                      <td class="text-center">7706412961</td>
+                      <td>Балега Юрий Юрьевич</td>
+                      <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
+                      <td class="text-center">7706412961</td>
+                      <td>Балега Юрий Юрьевич</td>
+                      <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
+                      <td class="text-center">7706412961</td>
+                      <td>Балега Юрий Юрьевич</td>
+                      <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
+                      <td class="text-center">7706412961</td>
+                      <td>Балега Юрий Юрьевич</td>
+                      <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="table__diagram diagram--turquoise">Фонд "Сколково"</span></td>
+                      <td class="text-center">7706412961</td>
+                      <td>Балега Юрий Юрьевич</td>
+                      <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                      <td><img src="./img/icons/edit-icon.svg"/></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="main__row">
+              <div class="time">
+                <p class="main__item-title">Текущее вермя</p>
+                <div class="time__row">
+                  <div class="hours" id="hours"></div>
+                  <div class="minutes" id="minutes"></div>
+                  <div class="seconds" id="seconds"></div>
+                </div>
+              </div>
             </div>
           </main>
         </div>

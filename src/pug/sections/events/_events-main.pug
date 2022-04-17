@@ -1,7 +1,10 @@
-main.main__row
-    include ./_events-strucrure.pug
-    .main__item--15.height-auto
-        .notes
-            include ./_events-notes.pug
-        include ./_events-form.pug
+main
+    .main__row
+        include ./_events-structure.pug
+        .main__item--15.height-auto
+            .notes
+                include ./_events-notes.pug
+            include ./_events-form.pug
+    .main__row
+        +time
 
