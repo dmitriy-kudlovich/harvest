@@ -100,22 +100,43 @@ sup {
 }
 
 .col--left {
-  display: none;
-  width: 16.74%;
+  display: block;
+  position: fixed;
+  z-index: -1;
 
   @media (min-width: 80rem) {
+    position: static;
     display: block;
+    width: 16.74%;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      display: block;
+      position: fixed;
+      left: 0;
+      right: 78.3%;
+      top: 0;
+      bottom: 0;
+      background-color: #1f2339;
+    }
   }
+}
+
+.col--left-active {
+  z-index: 1;
 }
 
 .col--right {
   padding: 3.44rem 2.5rem;
   width: 100%;
+  background-color: #4d5474;
 
   @media (min-width: 80rem) {
+    position: relative;
     padding: 3.44rem 4.94rem 3.44rem 2.5rem;
-
     width: calc(100% - 16.74%);
+    z-index: 2;
   }
 }
 
@@ -141,4 +162,8 @@ sup {
 
 .paddings-zero {
   padding: 0 !important;
+}
+
+.text-center {
+  text-align: center;
 }

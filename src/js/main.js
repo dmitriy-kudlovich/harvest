@@ -1,9 +1,14 @@
-let buttonCheck = document.querySelectorAll(".icon-wrapper-check");
-let files = document.querySelectorAll(".icon-wrapper-file");
+const nav = document.querySelector("#nav");
+const buttonHamburger = document.querySelector("#buttonHamburger");
+const colLeft = document.querySelector("#colLeft");
+const buttonClose = document.querySelector("#buttonClose");
 
-buttonCheck.forEach(function (item, index) {
-  item.addEventListener("click", function (event) {
-    buttonCheck[index].classList.toggle("icon-wrapper-check--active");
-    files[index].classList.toggle("icon-wrapper-file--active");
-  });
+buttonHamburger.addEventListener("click", function () {
+  nav.classList.add("nav--active");
+  colLeft.classList.add("col--left-active");
+});
+
+buttonClose.addEventListener("click", function () {
+  nav.classList.remove("nav--active");
+  colLeft.classList.remove("col--left-active");
 });

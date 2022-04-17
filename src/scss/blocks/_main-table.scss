@@ -43,3 +43,76 @@ td {
 tr:last-child td {
   border-bottom: none;
 }
+
+.companies__table-wrapper {
+  padding: 1rem 0.685rem;
+  height: 48rem;
+  background: #383e57;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+  text-overflow: ellipsis;
+}
+
+.companies__table {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-spacing: 0;
+  font-size: 0.75rem;
+  color: #a1a6be;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #3e4459;
+  border-radius: 6px;
+  padding: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #23273a;
+  border-radius: 6px;
+}
+
+.table__diagram {
+  display: flex;
+  align-items: center;
+}
+
+.companies__table th {
+  text-align: left;
+  color: #fff;
+}
+
+.diagram--turquoise::before {
+  content: url(../img/icons/diagram-icon-turquoise.svg);
+  margin-right: 0.685rem;
+}
+
+.diagram--red::before {
+  content: url(../img/icons/diagram-icon-red.svg);
+  margin-right: 0.685rem;
+}
+
+.diagram--magenta::before {
+  content: url(../img/icons/diagram-icon-magenta.svg);
+  margin-right: 0.685rem;
+}
+
+.table__name {
+  width: 19%;
+}
+
+.table__chief {
+  width: 18%;
+}
+
+.table__address {
+  width: 37%;
+}
+
+.number {
+  width: 11%;
+}

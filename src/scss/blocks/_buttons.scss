@@ -65,3 +65,97 @@
 .button-check {
   padding-left: 1rem;
 }
+
+.button--hamburger-wrapper {
+  display: block;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 2rem;
+  height: 2rem;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  @media (min-width: 62.12rem) {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 2rem;
+  }
+
+  @media (min-width: 80rem) {
+    display: none;
+  }
+}
+
+.hamburder-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.button--close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: #fff;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: #fff;
+  }
+
+  @media (min-width: 80rem) {
+    display: none;
+  }
+}

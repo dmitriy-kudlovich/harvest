@@ -30,27 +30,29 @@
 
 .section__doc {
   position: relative;
+
+  &:hover .icon-wrapper-check {
+    transform: rotate(180deg);
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+
+  &:hover .icon-wrapper-file {
+    display: block;
+  }
 }
 
 .icon-wrapper--absolute {
+  box-sizing: content-box;
   display: none;
   position: absolute;
   right: 0;
-  top: 1rem;
+  top: 0.3rem;
+  padding: 20px 0 0 20px;
 }
 
 .icon-wrapper-file {
   width: 24px;
-}
-
-.icon-wrapper-check--active {
-  transform: rotate(180deg);
-  padding-left: 0;
-  padding-right: 1rem;
-}
-
-.icon-wrapper-file--active {
-  display: block;
 }
 
 .main__section-contact {

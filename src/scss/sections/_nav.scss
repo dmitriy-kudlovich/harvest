@@ -1,24 +1,20 @@
 .nav {
-  display: none;
+  display: block;
   position: relative;
+  left: -100%;
   padding: 2.5rem 1.25rem 2.5rem 0.685rem;
   background-color: #1f2339;
   height: 100%;
-
-  &::before {
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 50%;
-    top: 0;
-    bottom: 0;
-    background-color: #1f2339;
-    z-index: -1;
-  }
+  z-index: 1;
+  transition: left 0.2s;
 
   @media (min-width: 80rem) {
-    display: block;
+    left: 0;
   }
+}
+
+.nav--active {
+  left: 0;
 }
 
 .nav__top {
@@ -49,8 +45,8 @@
   }
 }
 
-.nav__link--turquoise{
-  color: #43E8FF;
+.nav__link--turquoise {
+  color: #43e8ff;
 }
 
 .nav__link--active {

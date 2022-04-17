@@ -1,0 +1,19 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "Компании";
+
+
+block content
+    .container
+        .row
+            .col.col--left
+                include ../sections/companies/_companies-nav.pug
+            .col.col--right
+                include ../sections/companies/_companies-header.pug
+                include ../sections/companies/_companies-main.pug
+
+
+
+
+

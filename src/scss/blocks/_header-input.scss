@@ -1,0 +1,16 @@
+.header__input {
+  display: block;
+}
+
+.header__input-wrapper {
+  position: relative;
+  margin-right: 1.6875rem;
+  width: 54%;
+}
+
+.icon-wreapper__search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+}

@@ -1,0 +1,15 @@
+header.header
+    .header__row
+        .heading--wrapper
+            +heading()
+                |Организации
+        .header__menu
+            .header__menu-items
+                .header__input-wrapper
+                    input(type="text" placeholder="Поиск организации по ИНН или ОГРН").header__input.form__textarea
+                    .icon-wreapper.icon-wreapper__search
+                        img(src="./img/icons/filter-icon.svg")
+                button.header__button.header__button--white Найти
+                button.header__button.button--add
+                button.header__button
+                    img.header__button-img(src="./img/icons/settings-icon.svg")

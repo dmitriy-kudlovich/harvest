@@ -14,9 +14,14 @@
   }
 }
 
+.header__menu {
+  flex-grow: 1;
+}
+
 .header__menu-items {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .heading--wrapper {
